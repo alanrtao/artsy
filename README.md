@@ -32,10 +32,11 @@
 
 ## Manipulating Shapes
 - From grid to UV sphere
-- The Hand
+- The Hand: animating a procedural mesh
 - Basics of vertex data
 - Vertex shaders
 - Touching grass: GPU instancing
+  - Challenge: adding wind
 
 ## Not-Necessarily-Post Processing
 - Budget water: rendering order and sampling from prior renders
