@@ -39,3 +39,6 @@
 ## Rendering Pipelines
 - Stages of URP
 - Writing an SRP feature
+
+## Reading and Replication
+- Getting a hang of repliating papers
