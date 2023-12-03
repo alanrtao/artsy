@@ -35,3 +35,7 @@
 ## Not-Necessarily-Post Processing
 - Budget water: rendering order and sampling from prior renders
 - Stencil shader
+
+## Rendering Pipelines
+- Stages of URP
+- Writing an SRP feature
