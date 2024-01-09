@@ -40,5 +40,8 @@
 - Stages of URP
 - Writing an SRP feature
 
+## VFX Graph Intro
+> ??? I don't actually know VFX lol
+
 ## Reading and Replication
 - Getting a hang of repliating papers
