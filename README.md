@@ -1,59 +1,81 @@
 # Intro to Artsy Coding
 - This is a collection of exercises I found useful while learning coding for "visually artsy" purposes
-- In graphics-related work there is always a higher-level and lower-level than you are comfortable with
+  - This does *not* cover any professional field like tech art / graphics programming / etc as I am just a hobbyist
+  - I do encourage you to go through it and gauge which areas you are more interested in, and then use the better resources out there for your own niches
+
+- Speaking of niches, in graphics-related work there is always a higher-level and lower-level than you are comfortable with
   - The very highest level is specialized software like Blender, Houdini, Unity's VFX graph, etc.
   - The very low level is a layer above hardware, with Vulcan, DirectX, Metal, and emerging ones like WebGPU
 
 - While it's cool to be a wizard at either extreme, I feel like it's useful for beginners to get comfortable with the middle-ground first
   - Ultimately, tools at any level are just *tools*, they are in the way between *you* and *the thing you want to make*
   - I want this set of exercises to cover a lot of areas while not over-shadowing the actual thing you want to make
-  > This is mainly why the following exercises are made in Unity. I do not like their company's recent behavior, but you choose tools based on what you want to accomplish (plus I get it for free so ¯\\_(ツ)_/¯)
+  > This is mainly why the following exercises are made in Unity.
   > 
   > If you are more inclined for higher-level and more pipelined work, Unreal provides a lot of tooling for shaders and working with assets in general. However tweaking their render pipeline at the base level (i.e. adding more render textures and defining render passes) is pretty unintuitive.
+  > 
+  > Godot is cool and pretty customizable but their language is dynamically typed and sample code could be confusing.
 
-- Ideally, you would be able to know what to search for (and maybe also where) when you want to make something visually artsy
-  - There are way better tutorials for each specific part of the high-to-low-level spectrum
-  - There are also great resources for theory without necessarily the implementation
+- A lot of stuff you do in graphics is combining other people's ideas and then implementing them, so I will structure this set of exercises as closely to that process as possible instead of handholding every single step
 
-- Ultimately, the set of exercises are chosen from my own path and by no means cover any professional field. I do this as hobby not my job :)
+- Have fun! :)
 
 ## Prerequisites
 - Please install Unity Editor LTS 2022.3.16f1
+- Basic terminology in Unity
+  - A **scene** is a collection of objects a viewer is exposed to at a time
+    - Scenes are always 3D in Unity, Unity 2D is still in 3D, just ignoring on dimension
+  - A **game object** is an object placed in the scene
+    - It doesn't necessarily need to have any visible form, but it does have a *transform* describing its position, orientation, and size
+    - Game objects have **components** attached to them, which *do not* have a separate transform (this aspect is different from UE's components)
+    - A game object can be attached to one other game object, called its **parent**, one parent can have multiple **children**
+      - Unlike components, child game objects can have a *relative* transform based on it's parent
+  - A **prefab** is a game object saved in the project without being attached to any scene
+    - They can be spawned into any scene
+  - A **scriptable object** is pure data living in the project itself without being attached to any scene
+    - Game objects can refer to scriptable objects, and scriptable objects can access game objects if they're coded to do so
 
 ## Format
-- Unit folders are numbered in order, they are summarized below
-- Each unit folder contains at least one Unity project that will be **capitalized**
-- All other files are supplements that you can take a look at, for example README's
+- Unit folders are numbered in order below, they are summarized in this README and elaborated in each repsective folder
+  - Each unit folder contains at least one Unity project that will be capitalized
+  - All other supplementary files are lower case
 
-## Maths
-- You *will* need [Desmos](https://www.desmos.com/calculator) at some point of you life
-  - Familiarize yourself with all exponential, trig, "number theory" functions like `floor` and `ceil`, and statistic distributions
-- Coordinates and vectors
-  - Barycentric coordinates
+## Math
+- Functions
+  - The "feel" and "cost" of functions
   - Time (not actual time, just the `t` variable in curves)
+- Coordinates and vectors
   - Spaces and transforming between them
-    - Handedness and conventions
+  - Non-rectangular coordinates (namely barycentric)
 - Noise
   - Perlin noise
+  - Worley noise
 - Color space
   - Implementing HSV
   - Implementing OKLab
 
 ## Fragment Shaders
-- Fragment shaders
-- Maths in HLSL
-- Texture sampling: texels, edge behavior, interpolation methods
-- Cursed flat shader: calculus in shader programming and when they can be useful
-- Compute shader noise
-  - Challenge: 3D noise
 
-## Manipulating Shapes
+> I am placing this section before the next as it transitions well from the previous section, but technically speaking fragment shaders come *after* vertex shaders which is in the next section.
+
+- Fragment shaders and HLSL
+- Texture sampling: texels, edge behavior, interpolation methods
+- (Differential) calculus in shaders
+- Compute shaders
+  - Blur and other kernels
+  - Revisiting noise
+
+## Shapes and Models
 - From grid to UV sphere
 - The Hand: animating a procedural mesh
-- Basics of vertex data
+- Vertex Data
 - Vertex shaders
 - Touching grass: GPU instancing
   - Challenge: adding wind
+
+## Unity Shader Graph
+- Comparing it to HLSL
+- Using HLSL within Shader Graph
 
 ## Not-Necessarily-Post Processing
 - Budget water: rendering order and sampling from prior renders
