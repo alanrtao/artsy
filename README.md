@@ -1,20 +1,23 @@
 # Intro to Artsy Coding
-- This is a collection of mainly Unity exercises I found useful while learning coding for "artsy" purposes
-  - I'm just a hobbyist so this does *not* cover any professional field like tech art / graphics programming. Please talk to a professional instead!
+
+## The Intro
+
+- This is a collection of mainly Unity exercises I found useful while learning coding for "artsy" stuff
+  - As the naming suggests, I am just a hobbyist and this by no means cover any professional field like tech art / graphics programming
+  - For those planning to enter industry, I do hope this collection could be a *starting point* of getting the hang of graphics-related coding, but **please reach out to actual professionals in the fields you are interested in**!
+    - Also please read textbooks like Real Time Rendering 4th Edition
 
 - In graphics-related work there is always a higher-level and lower-level than you are comfortable with
-  - The very highest level is specialized software like Blender, Houdini, Unity's VFX graph, etc.
-  - The very low level is a layer above hardware, with OpenGL, Vulcan, DirectX, Metal, and emerging WebGPU
+  - The **high level** is specialized software like Blender, Houdini, Unity's VFX graph, etc.
+  - The **low level** is a layer above hardware, with OpenGL, Vulcan, DirectX, Metal, and emerging WebGPU
+  - Game engines usually find themselves in-between, where you *import* stuff from high level, write some code, and hand those to low level
 
-- While it's cool to be a wizard at either end of the spectrum, I feel like it's useful for beginners to get comfortable with the middle-ground first
-  - Ultimately, tools at any level are just *tools*, they are in the way between *you* and *the thing you want to make*
-  - I want this set of exercises to cover a lot of areas while not over-shadowing the actual thing you want to make
-  > This is mainly why the following exercises are made in Unity.
-  > 
-  > Unreal provides a lot of tooling for higher-level work, but tweaking their render pipeline at the base level (i.e. adding more render textures and defining render passes) is pretty unintuitive.
-  > 
-  > Godot is cool and pretty customizable but their language is dynamically typed and sample code could be confusing.
-
+- While it's cool to be a wizard at either end of the spectrum, I feel like it's useful for beginners to get comfortable with the **middle-ground** first, hence this tutorial
+  - The goal of this is *not* to learn Unity, but to learn concepts *through* Unity and then probably ditch Unity for whichever engine you like
+  - The reason why Unity is picked is because every aspect of it is exactly *mid*
+    - UE fits high-level tech-art stuff well, but not customizing the render pipeline
+    - C# is... at least not dynamically typed so I won't need to explain what each `var` stands for
+    - It runs fine on Windows and hopefully Linux and Mac
 - A lot of stuff you do in graphics is combining other people's ideas and then implementing them, so I will structure this set of exercises as closely to that process as possible instead of handholding every single step
 
 - Have fun! :)
