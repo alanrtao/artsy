@@ -1,16 +1,12 @@
 # Intro to Artsy Coding
-- This is a collection of exercises I found useful while learning coding for "visually artsy" purposes
+- This is a collection of mainly Unity exercises I found useful while learning coding for "artsy" purposes
   - I'm just a hobbyist so this does *not* cover any professional field like tech art / graphics programming. Please talk to a professional instead!
 
 - In graphics-related work there is always a higher-level and lower-level than you are comfortable with
   - The very highest level is specialized software like Blender, Houdini, Unity's VFX graph, etc.
-  - The very low level is a layer above hardware, with Vulcan, DirectX, Metal, and emerging one
+  - The very low level is a layer above hardware, with OpenGL, Vulcan, DirectX, Metal, and emerging WebGPU
 
-If you are more inclined for higher-level and more pipelined work, Unreal provides a lot of tooling for shaders and working with assets in general. However tweaking their render pipeline at the base level (i.e. adding more render textures and defining render passes) is pretty unintuitive.
-
-Godot is cool and pretty customizable but their language is dynamically typed and sample code could be confusing.s like WebGPU
-
-- While it's cool to be a wizard at either extreme, I feel like it's useful for beginners to get comfortable with the middle-ground first
+- While it's cool to be a wizard at either end of the spectrum, I feel like it's useful for beginners to get comfortable with the middle-ground first
   - Ultimately, tools at any level are just *tools*, they are in the way between *you* and *the thing you want to make*
   - I want this set of exercises to cover a lot of areas while not over-shadowing the actual thing you want to make
   > This is mainly why the following exercises are made in Unity.
