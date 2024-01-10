@@ -5,7 +5,11 @@
 
 - Speaking of niches, in graphics-related work there is always a higher-level and lower-level than you are comfortable with
   - The very highest level is specialized software like Blender, Houdini, Unity's VFX graph, etc.
-  - The very low level is a layer above hardware, with Vulcan, DirectX, Metal, and emerging ones like WebGPU
+  - The very low level is a layer above hardware, with Vulcan, DirectX, Metal, and emerging one
+
+If you are more inclined for higher-level and more pipelined work, Unreal provides a lot of tooling for shaders and working with assets in general. However tweaking their render pipeline at the base level (i.e. adding more render textures and defining render passes) is pretty unintuitive.
+
+Godot is cool and pretty customizable but their language is dynamically typed and sample code could be confusing.s like WebGPU
 
 - While it's cool to be a wizard at either extreme, I feel like it's useful for beginners to get comfortable with the middle-ground first
   - Ultimately, tools at any level are just *tools*, they are in the way between *you* and *the thing you want to make*
@@ -43,7 +47,7 @@
 ## Math
 - Functions
   - The "feel" and "cost" of functions
-  - Time (not actual time, just the `t` variable in curves)
+  - Time and "time"
 - Coordinates and vectors
   - Spaces and transforming between them
   - Non-rectangular coordinates (namely barycentric)
@@ -78,7 +82,7 @@
 - Using HLSL within Shader Graph
 
 ## Not-Necessarily-Post Processing
-- Budget water: rendering order and sampling from prior renders
+- Budget water
 - Stencil shader
 
 ## Rendering Pipelines
